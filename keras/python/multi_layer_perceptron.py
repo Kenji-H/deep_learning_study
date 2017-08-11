@@ -62,5 +62,5 @@ history = model.fit(X_train, Y_train,
 
 # evaluate model
 score = model.evaluate(X_test, Y_test, verbose=VERBOSE)
-print("Test score:", score[0])
-print('Test accuracy:', score[1])
+print("Test score:{}".format(score[0]))     # 0.186985414364
+print('Test accuracy:{}'.format(score[1]))  # 0.9469
