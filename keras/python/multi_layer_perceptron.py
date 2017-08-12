@@ -16,6 +16,7 @@ N_HIDDEN = 128
 
 VERBOSE = 1
 
+# for reproducibility
 np.random.seed(1226)
 
 # download data
@@ -62,5 +63,5 @@ history = model.fit(X_train, Y_train,
 
 # evaluate model
 score = model.evaluate(X_test, Y_test, verbose=VERBOSE)
-print("Test score:{}".format(score[0]))     # 0.186985414364
+print("Test loss:{}".format(score[0]))     # 0.186985414364
 print('Test accuracy:{}'.format(score[1]))  # 0.9469
